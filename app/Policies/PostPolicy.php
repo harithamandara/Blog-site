@@ -29,7 +29,7 @@ class PostPolicy
      */
     public function create(User $user): bool
     {
-        return $user->isAdmin() || $user->isSTUDENT() || $user->isTeacher() || $user->isUser();
+        return $user->isAdmin() || $user->isStudent() || $user->isTeacher() || $user->isUser();
     }
 
     /**

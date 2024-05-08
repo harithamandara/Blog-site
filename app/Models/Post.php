@@ -22,12 +22,14 @@ class Post extends Model
         'image',
         'body',
         'published_at',
+        'approved_at',
         'featured',
     ];
 
     // Casting published_at attribute to Carbon instance
     protected $casts = [
         'published_at' => 'datetime',
+        'approved_at' => 'datetime',
     ];
 
     // Relationship with author (User)

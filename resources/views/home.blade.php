@@ -95,7 +95,7 @@
         </div>
 
         <a class="block mt-10 text-lg font-semibold text-center text-yellow-500" href="{{ route('posts.index') }}">
-            {{ ('home.more_posts') }}</a>
+            {{ ('more posts') }}</a>
         <hr>
 
         <h2 class="mt-16 mb-5 text-3xl font-bold text-yellow-500">{{ ('Latest Posts') }}</h2>

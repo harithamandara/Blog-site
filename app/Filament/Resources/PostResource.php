@@ -59,6 +59,7 @@ class PostResource extends Resource
                     [
                         FileUpload::make('image')->image()->directory('posts/thumbnails'),
                         DateTimePicker::make('published_at')->nullable(),
+                        DateTimePicker::make('approved_at')->nullable(),
                         Checkbox::make('featured'),
                         Select::make('user_id')
                             ->relationship('author', 'name')
@@ -82,6 +83,7 @@ class PostResource extends Resource
                 TextColumn::make('slug')->sortable()->searchable(),
                 TextColumn::make('author.name')->sortable()->searchable(),
                 TextColumn::make('published_at')->date('Y-m-d')->sortable()->searchable(),
+                TextColumn::make('approved_at')->date('Y-m-d')->sortable()->searchable(),
                 CheckboxColumn::make('featured'),
             ])
             ->filters([

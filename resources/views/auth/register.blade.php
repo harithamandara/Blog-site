@@ -33,8 +33,8 @@
                 <x-label for="school" value="{{ __('School') }}" />
                 <select id="school_id" name="school_id" class="block mt-1 w-full">
                     <option value="">Select School</option>
-                    <option value="School A">School A</option>
-                    <option value="School B">School B</option>
+                    <option value="School A">Computing School</option>
+                    <option value="School B">Business School</option>
 
 
                 </select>
